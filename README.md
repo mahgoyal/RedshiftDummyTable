@@ -29,7 +29,7 @@ redshiftcluster=# insert into twofivesix (
      (SELECT 0 as n UNION SELECT 1) p7
    Order by 1
  );
-INSERT 0 256
+ INSERT 0 256
 redshiftcluster=# commit;
 COMMIT
 
@@ -57,7 +57,7 @@ redshiftcluster=# insert into test_table (
  FROM (select (a.n + b.n + c.n + d.n) as n, (random() * 1000)::int as id from twofivesix a cross join (select n*256 as n from twofivesix) b cross join (select n*65536 as n from twofivesix) c
  cross join (select n*16777216 as n from ( select distinct (n/16)::int as n from twofivesix ) ) d)
  ) order by ingest_time;
-INSERT 0 268435456
+ INSERT 0 268435456
 
 redshiftcluster=# commit;
 COMMIT
