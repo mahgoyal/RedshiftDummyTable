@@ -3,11 +3,11 @@ This script is useful if you are beginner in Redshift and want to create a large
 
 1) Create table twofivesix which will act as base table for populating data on the  test_table.
 
-2) Create sample table structure (test_table)
+2) Create sample table structure (test_table).
 
-3) Run the query to dynamically load data to table
+3) Run the query to dynamically load data to table.
 
-4) Analyze the table;
+4) Analyze the table.
 
 5) Check the no. of Rows populated. 
 
