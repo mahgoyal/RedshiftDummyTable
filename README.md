@@ -1,5 +1,5 @@
 # RedshiftDummyTable
-This script is useful if you are beginner in Redshift and want to create a large dummy table (test_table) with huge data set. Below set of queries will dynamically create a table with ~268 Million to billions of rows without loading data into the Redshift from s3.
+This script is useful for Redshift beginner who is l and want to create a large dummy table (test_table) with huge data set. Below set of queries will dynamically create a table with ~268 Million to billions of rows without loading data into the Redshift from s3.
 
 1) Create table twofivesix which will act as base table for populating data on the  test_table.
 
