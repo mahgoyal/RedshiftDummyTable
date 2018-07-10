@@ -1,5 +1,5 @@
 # RedshiftDummyTable
-This script will create a dummy table (test_table) with huge data set. Executing below queries sequentially will dynamically create a table and populate ~268 Million to billions of rows without loading data into the Redshift from S3. Table will have incremental sort key on ingest_time column (datatype timestamp) and distribution key on id (datatype int).
+This script will create a dummy table (test_table) with huge data set. Executing below queries sequentially will dynamically create a table and populate ~268 Million to billions of rows without loading data into the Redshift from S3. Table will have sort key on ingest_time column (datatype timestamp) and distribution key on id (datatype int).
 
 1) Create table twofivesix which will act as base table for populating data on the test_table.
 
